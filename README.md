@@ -1,13 +1,19 @@
-# Velero-plugin for OpenEBS CStor volume
-
-Velero is a utility to back up and restore your Kubernetes resource and persistent volumes.
-
-To do backup/restore of OpenEBS CStor volumes through Velero utility, you need to install and configure
-OpenEBS velero-plugin.
-
 [![Build Status](https://travis-ci.org/openebs/velero-plugin.svg?branch=master)](https://travis-ci.org/openebs/velero-plugin)
 [![Go Report](https://goreportcard.com/badge/github.com/openebs/velero-plugin)](https://goreportcard.com/report/github.com/openebs/velero-plugin)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fopenebs%2Fvelero-plugin.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fopenebs%2Fvelero-plugin?ref=badge_shield)
+
+# Velero-plugin for OpenEBS CStor Volumes
+
+[Velero](https://velero.io/) is an open source tool to safely backup and restore, perform disaster recovery, and migrate Kubernetes cluster resources and persistent volumes. Velero uses plugins to integrate with a variety of storage systems and Kubernetes platforms to support backup, restore and snapshot operations.
+
+To perform backup and restore of OpenEBS cStor Volumes through Velero you need to install and configure the OpenEBS velero-plugin.
+
+Using OpenEBS velero-plugin, you can:
+- Backup/Restore cStor Volumes to any remote S3 compatible storage like Amazon S3, GCP or Minio. 
+- Backup/Restore cStor Volumes locally within the cluster using cStor Snapshot and Clone capabilities.
+
+When using remote backup at scheduled intervals, cStor supports incremental backups.
+
 
 ## Table of Contents
 - [Compatibility matrix](#compatibility-matrix)
